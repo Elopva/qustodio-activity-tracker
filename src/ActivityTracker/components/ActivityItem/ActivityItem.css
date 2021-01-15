@@ -1,0 +1,14 @@
+.activityItem__row {
+    display: table-row;
+}
+
+.activityItem__row--header{
+    background-color: rgb(128, 128, 128);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.activityItem__cell {
+    display: table-cell;
+    padding: .5rem;
+}
