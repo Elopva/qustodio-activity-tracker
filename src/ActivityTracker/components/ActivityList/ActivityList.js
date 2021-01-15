@@ -15,16 +15,13 @@ const ActivityList = props => {
     const [activities, setActivities] = useState([]);
 
     const selectActivity = event => {
-        console.log(event.target);
         const updatedActivities = [...activities]
-        console.log(event.target.value);
         if (updatedActivities.includes(event.target.value)) {
           const index = updatedActivities.indexOf(event.target.value);
           updatedActivities.splice(index, 1);
         } else {
           updatedActivities.push(event.target.value);
         }
-        console.log(updatedActivities);
         setShowButton(updatedActivities.length > 0);
         setActivities(updatedActivities);
     }
